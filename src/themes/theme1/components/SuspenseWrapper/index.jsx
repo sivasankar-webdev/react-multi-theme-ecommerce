@@ -148,7 +148,7 @@ export function FullPageLoader({ message = "Loading..." }) {
             </svg>
           </div>
           <span className="text-[18px] font-black tracking-wide" style={{ color: "#1a2e10" }}>
-            EKO<span className="font-light" style={{ color: GREEN }}>MART</span>
+            E {" "}<span className="font-bold" style={{ color: GREEN }}>COMMS</span>
           </span>
         </div>
 
