@@ -123,10 +123,10 @@ git --version     # git version 2.x.x
 
 ```bash
 # Clone via HTTPS
-git clone https://github.com/YOUR_USERNAME/ekomart.git
+git clone https://github.com/sivasankar-webdev/react-multi-theme-ecommerce.git
 
 # Or clone via SSH
-git clone git@github.com:YOUR_USERNAME/ekomart.git
+git clone git@github.com:sivasankar-webdev/react-multi-theme-ecommerce.git
 
 # Navigate into the project folder
 cd project_name
