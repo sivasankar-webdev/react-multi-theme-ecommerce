@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+.container {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
