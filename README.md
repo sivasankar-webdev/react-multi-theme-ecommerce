@@ -150,6 +150,8 @@ yarn install
 
 ```bash
 # Using npm
+npm start
+# or
 npm run dev
 
 # Or using yarn
