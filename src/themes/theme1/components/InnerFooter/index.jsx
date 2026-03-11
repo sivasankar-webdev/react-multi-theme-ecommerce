@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PaymentsImg from "@/assets/theme1/images/payment/04.png";
 
 /* ═══════════════════════════════════════════════════
    ICONS
@@ -267,7 +268,7 @@ export default function InnerPageFooter({ copyrightName = "Ekomart" }) {
               {paymentBadges.map((p, i) => (
                 
                   //Replace each <span> with your real payment image:
-                  <img key={i} src={`/src/assets/theme1/images/payment/${p.label.toLowerCase()}.png`}
+                  <img key={i} src={PaymentsImg}
                     alt={p.label} className="h-7 object-contain rounded" />
                 
               ))}
