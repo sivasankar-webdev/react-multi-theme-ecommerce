@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import HeroImg from "@/assets/theme2/images/hero/01.png";
 
 const TEAL  = "#1a6b7a";
 const GREEN = "#3dbb6c";
@@ -10,7 +11,7 @@ const GREEN2 = "#2ea55c";
 export default function Theme2NewsletterBanner({
   title      = "Stay home & get your daily needs from our shop",
   disclaimer = "I agree that my submitted data is being collected and stored.",
-  image      = "/src/assets/theme2/images/hero/01.png",
+  image      = HeroImg,
   onSubscribe,
 }) {
   const [email,   setEmail]   = useState("");
@@ -175,7 +176,7 @@ export default function Theme2NewsletterBanner({
               }}
               onError={e => {
                 e.target.onerror = null;
-                e.target.src = "/src/assets/theme2/images/hero/01.png";
+                e.target.src = HeroImg;
               }}
               loading="lazy"
             />

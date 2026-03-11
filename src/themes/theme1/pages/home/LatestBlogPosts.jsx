@@ -1,4 +1,7 @@
 import { useState } from "react";
+import Blog01 from "@/assets/theme1/images/blog/01.jpg";
+import Blog02 from "@/assets/theme1/images/blog/02.jpg";
+import Blog03 from "@/assets/theme1/images/blog/03.jpg";
 
 /* ══════════════════════════════════════════
    ICONS
@@ -32,7 +35,7 @@ const PlusIcon = () => (
 const defaultPosts = [
   {
     id: 1,
-    image: "/src/assets/theme1/images/blog/01.jpg",
+    image: Blog01,
     date: "15 Sep, 2023",
     category: "Modern Fashion",
     title: "Shion Fixation: Fueling Your Passion for All Things Stylish",
@@ -40,7 +43,7 @@ const defaultPosts = [
   },
   {
     id: 2,
-    image: "/src/assets/theme1/images/blog/02.jpg",
+    image: Blog02,
     date: "15 Sep, 2023",
     category: "Modern Fashion",
     title: "Ashion Fixation: Fueling Your Passion for All Things Stylish",
@@ -48,7 +51,7 @@ const defaultPosts = [
   },
   {
     id: 3,
-    image: "/src/assets/theme1/images/blog/03.jpg",
+    image: Blog03,
     date: "15 Sep, 2023",
     category: "Modern Fashion",
     title: "Fixation: Fueling Your Passion for All Things Stylish",

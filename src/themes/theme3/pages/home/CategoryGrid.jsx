@@ -1,4 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import Joy1 from "@/assets/theme3/images/joy/01.png";
+import Joy2 from "@/assets/theme3/images/joy/02.png";
+import Joy3 from "@/assets/theme3/images/joy/03.png";
 
 /* ══════════════════════════════════════
    STYLES
@@ -185,9 +188,9 @@ const FEATURED_PRODUCT = {
   name: "Game Console Controller + USB 3.0 Cable",
   price: 685,
   thumbs: [
-    "/src/assets/theme3/images/joy/01.png",
-    "/src/assets/theme3/images/joy/02.png",
-    "/src/assets/theme3/images/joy/03.png",
+    Joy1,
+    Joy2,
+    Joy3
   ],
 };
 

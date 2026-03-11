@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import Veges1 from "@/assets/theme2/images/carousel/veges1.png";
 
 const TEAL  = "#1a6b7a";
 const TEAL2 = "#195f6d";
@@ -219,36 +220,36 @@ const PRODUCTS_A = [
     originalPrice:1500, 
     rating:4.8, 
     ratingCount:"17k",
-    image:"/src/assets/theme2/images/carousel/veges1.png" 
+    image:Veges1 
   },
   { id:2, name:"Taylor Farms Broccoli Florets...", price:1500, originalPrice:1500, rating:4.8, ratingCount:"17k",
-    image:"/src/assets/theme2/images/carousel/veges1.png" },
+    image:Veges1 },
   { id:3, name:"Taylor Farms Broccoli Florets...", price:1500, originalPrice:1500, rating:4.8, ratingCount:"17k",
-    image:"/src/assets/theme2/images/carousel/veges1.png" },
+    image:Veges1 },
   { id:4, name:"Taylor Farms Broccoli Florets...", price:1500, originalPrice:1500, rating:4.8, ratingCount:"17k",
-    image:"/src/assets/theme2/images/carousel/veges1.png" },
+    image:Veges1 },
 ];
 
 const PRODUCTS_B = [
   { id:1, name:"Taylor Farms Broccoli Florets...", price:1500, originalPrice:1500, rating:4.8, ratingCount:"17k",
-    image:"/src/assets/theme2/images/carousel/veges1.png" },
+    image:Veges1 },
   { id:2, name:"Taylor Farms Broccoli Florets...", price:1500, originalPrice:1500, rating:4.8, ratingCount:"17k",
-    image:"/src/assets/theme2/images/carousel/veges1.png" },
+    image:Veges1 },
   { id:3, name:"Taylor Farms Broccoli Florets...", price:1500, originalPrice:1500, rating:4.8, ratingCount:"17k",
-    image:"/src/assets/theme2/images/carousel/veges1.png" },
+    image:Veges1 },
   { id:4, name:"Taylor Farms Broccoli Florets...", price:1500, originalPrice:1500, rating:4.8, ratingCount:"17k",
-    image:"/src/assets/theme2/images/carousel/veges1.png" },
+    image:Veges1 },
 ];
 
 const PRODUCTS_C = [
   { id:1, name:"Taylor Farms Broccoli Florets...", price:1500, originalPrice:1500, rating:4.8, ratingCount:"17k",
-    image:"/src/assets/theme2/images/carousel/veges1.png" },
+    image:Veges1 },
   { id:2, name:"Taylor Farms Broccoli Florets...", price:1500, originalPrice:1500, rating:4.8, ratingCount:"17k",
-    image:"/src/assets/theme2/images/carousel/veges1.png" },
+    image:Veges1 },
   { id:3, name:"Taylor Farms Broccoli Florets...", price:1500, originalPrice:1500, rating:4.8, ratingCount:"17k",
-    image:"/src/assets/theme2/images/carousel/veges1.png" },
+    image:Veges1 },
   { id:4, name:"Taylor Farms Broccoli Florets...", price:1500, originalPrice:1500, rating:4.8, ratingCount:"17k",
-    image:"/src/assets/theme2/images/carousel/veges1.png" },
+    image:Veges1 },
 ];
 
 const defaultCategories = [

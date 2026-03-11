@@ -1,4 +1,11 @@
 import { useRef, useState } from "react";
+import Cat05 from "@/assets/theme1/images/category/05.png";
+import Cat01 from "@/assets/theme1/images/category/01.png";
+import Cat09 from "@/assets/theme1/images/category/09.png";
+import Cat03 from "@/assets/theme1/images/category/03.png";
+import Cat04 from "@/assets/theme1/images/category/04.png";
+import Cat07 from "@/assets/theme1/images/category/07.png";
+import Cat10 from "@/assets/theme1/images/category/10.png";
 
 /* ── Arrow Icons ── */
 const PrevIcon = () => (
@@ -18,16 +25,16 @@ const NextIcon = () => (
    → e.g. image: "/src/assets/theme1/images/categories/drinks.png"
 ══════════════════════════════════════════ */
 const categories = [
-  { id: 1, title: "Organic Vegetable", image: "/src/assets/theme1/images/category/01.png" },
-  { id: 2, title: "Fresh Fruits",      image: "/src/assets/theme1/images/category/05.png" },
-  { id: 3, title: "Snacks & Chips",    image: "/src/assets/theme1/images/category/09.png" },
-  { id: 4, title: "Mixed Basket",      image: "/src/assets/theme1/images/category/03.png" },
-  { id: 5, title: "Strawberries",      image: "/src/assets/theme1/images/category/04.png" },
-  { id: 6, title: "Juice & Drinks",    image: "/src/assets/theme1/images/category/07.png" },
-  { id: 7, title: "Dairy & Eggs",      image: "/src/assets/theme1/images/category/10.png" },
-  { id: 8, title: "Fresh Fruits",      image: "/src/assets/theme1/images/category/05.png" },
-  { id: 9, title: "Snacks & Chips",    image: "/src/assets/theme1/images/category/09.png" },
-  { id: 10, title: "Mixed Basket",     image: "/src/assets/theme1/images/category/03.png" },
+  { id: 1, title: "Organic Vegetable", image: Cat01 },
+  { id: 2, title: "Fresh Fruits",      image: Cat05 },
+  { id: 3, title: "Snacks & Chips",    image: Cat09 },
+  { id: 4, title: "Mixed Basket",      image: Cat03 },
+  { id: 5, title: "Strawberries",      image: Cat04 },
+  { id: 6, title: "Juice & Drinks",    image: Cat07 },
+  { id: 7, title: "Dairy & Eggs",      image: Cat10 },
+  { id: 8, title: "Fresh Fruits",      image: Cat05 },
+  { id: 9, title: "Snacks & Chips",    image: Cat09 },
+  { id: 10, title: "Mixed Basket",     image: Cat03 },
 ];
 
 /* ══════════════════════════════════════════

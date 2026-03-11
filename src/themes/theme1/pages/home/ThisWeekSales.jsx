@@ -1,4 +1,11 @@
 import { useState } from "react";
+import Groc01 from "@/assets/theme1/images/grocery/01.jpg";
+import Groc19 from "@/assets/theme1/images/grocery/19.jpg";
+import Groc20 from "@/assets/theme1/images/grocery/20.jpg";
+import Groc21 from "@/assets/theme1/images/grocery/21.jpg";
+import Groc22 from "@/assets/theme1/images/grocery/22.jpg";
+import Groc23 from "@/assets/theme1/images/grocery/23.jpg";
+import Groc24 from "@/assets/theme1/images/grocery/24.jpg";
 
 /* ══════════════════════════════════════════
    ICONS
@@ -79,52 +86,52 @@ function ActionBtn({ icon, label }) {
 ══════════════════════════════════════════ */
 const allProducts = {
   "Frozen Foods": [
-    { id:1,  rating:5, image:"/src/assets/theme1/images/grocery/01.jpg", title:"Firebase business makes your profit",    pack:"500g Pack", price:50,  original:36 },
-    { id:2,  rating:5, image:"/src/assets/theme1/images/grocery/19.jpg", title:"Netlyfy business makes your profit",     pack:"500g Pack", price:19,  original:36 },
-    { id:3,  rating:5, image:"/src/assets/theme1/images/grocery/20.jpg", title:"Details business makes your profit",     pack:"500g Pack", price:90,  original:36 },
-    { id:4,  rating:5, image:"/src/assets/theme1/images/grocery/21.jpg", title:"Profitable business makes your profit", pack:"500g Pack", price:30,  original:36 },
-    { id:5,  rating:5, image:"/src/assets/theme1/images/grocery/22.jpg", title:"Valuable business makes your profit",   pack:"500g Pack", price:16,  original:36 },
-    { id:6,  rating:4, image:"/src/assets/theme1/images/grocery/23.jpg", title:"Firebase business makes your profit",    pack:"500g Pack", price:50,  original:36 },
-    { id:7,  rating:5, image:"/src/assets/theme1/images/grocery/24.jpg", title:"Netlyfy business makes your profit",     pack:"500g Pack", price:19,  original:36 },
-    { id:8,  rating:5, image:"/src/assets/theme1/images/grocery/19.jpg", title:"Valuable business makes your profit",   pack:"500g Pack", price:16,  original:36 },
-    { id:9,  rating:5, image:"/src/assets/theme1/images/grocery/20.jpg", title:"System business makes your profit",      pack:"500g Pack", price:15,  original:36 },
-    { id:10, rating:4, image:"/src/assets/theme1/images/grocery/21.jpg", title:"Details business makes your profit",     pack:"500g Pack", price:90,  original:36 },
+    { id:1,  rating:5, image:Groc01, title:"Firebase business makes your profit",    pack:"500g Pack", price:50,  original:36 },
+    { id:2,  rating:5, image:Groc19, title:"Netlyfy business makes your profit",     pack:"500g Pack", price:19,  original:36 },
+    { id:3,  rating:5, image:Groc20, title:"Details business makes your profit",     pack:"500g Pack", price:90,  original:36 },
+    { id:4,  rating:5, image:Groc21, title:"Profitable business makes your profit", pack:"500g Pack", price:30,  original:36 },
+    { id:5,  rating:5, image:Groc22, title:"Valuable business makes your profit",   pack:"500g Pack", price:16,  original:36 },
+    { id:6,  rating:4, image:Groc23, title:"Firebase business makes your profit",    pack:"500g Pack", price:50,  original:36 },
+    { id:7,  rating:5, image:Groc24, title:"Netlyfy business makes your profit",     pack:"500g Pack", price:19,  original:36 },
+    { id:8,  rating:5, image:Groc19, title:"Valuable business makes your profit",   pack:"500g Pack", price:16,  original:36 },
+    { id:9,  rating:5, image:Groc20, title:"System business makes your profit",      pack:"500g Pack", price:15,  original:36 },
+    { id:10, rating:4, image:Groc21, title:"Details business makes your profit",     pack:"500g Pack", price:90,  original:36 },
   ],
   "Diet Foods": [
-    { id:11, rating:5, image:"/src/assets/theme1/images/grocery/21.jpg", title:"Green salad diet pack fresh daily",     pack:"250g Pack", price:22, original:30 },
-    { id:12, rating:4, image:"/src/assets/theme1/images/grocery/20.jpg", title:"Berry detox smoothie mix organic",      pack:"300g Pack", price:35, original:44 },
-    { id:13, rating:5, image:"/src/assets/theme1/images/grocery/19.jpg", title:"Oatmeal power breakfast blend",         pack:"500g Pack", price:18, original:20 },
-    { id:14, rating:5, image:"/src/assets/theme1/images/grocery/24.jpg", title:"Natural juice diet drink low sugar",    pack:"1L Bottle", price:12, original:17 },
-    { id:15, rating:4, image:"/src/assets/theme1/images/grocery/23.jpg", title:"Low calorie meal prep fresh pack",       pack:"400g Pack", price:28, original:35 },
-    { id:16, rating:5, image:"/src/assets/theme1/images/grocery/21.jpg", title:"Protein bar chocolate almond crunch",   pack:"60g Bar",   price:5,  original:7  },
-    { id:17, rating:5, image:"/src/assets/theme1/images/grocery/19.jpg", title:"Tropical slim juice blend daily",       pack:"500ml",     price:10, original:14 },
-    { id:18, rating:4, image:"/src/assets/theme1/images/grocery/20.jpg", title:"Whole grain crackers baked light",      pack:"200g Pack", price:8,  original:10 },
-    { id:19, rating:5, image:"/src/assets/theme1/images/grocery/24.jpg", title:"Keto snack mix nuts and seeds",         pack:"300g Pack", price:20, original:25 },
-    { id:20, rating:5, image:"/src/assets/theme1/images/grocery/24.jpg", title:"Fiber boost cereal morning fresh",      pack:"500g Pack", price:15, original:18 },
+    { id:11, rating:5, image:Groc21, title:"Green salad diet pack fresh daily",     pack:"250g Pack", price:22, original:30 },
+    { id:12, rating:4, image:Groc20, title:"Berry detox smoothie mix organic",      pack:"300g Pack", price:35, original:44 },
+    { id:13, rating:5, image:Groc19, title:"Oatmeal power breakfast blend",         pack:"500g Pack", price:18, original:20 },
+    { id:14, rating:5, image:Groc24, title:"Natural juice diet drink low sugar",    pack:"1L Bottle", price:12, original:17 },
+    { id:15, rating:4, image:Groc23, title:"Low calorie meal prep fresh pack",       pack:"400g Pack", price:28, original:35 },
+    { id:16, rating:5, image:Groc24, title:"Protein bar chocolate almond crunch",   pack:"60g Bar",   price:5,  original:7  },
+    { id:17, rating:5, image:Groc19, title:"Tropical slim juice blend daily",       pack:"500ml",     price:10, original:14 },
+    { id:18, rating:4, image:Groc20, title:"Whole grain crackers baked light",      pack:"200g Pack", price:8,  original:10 },
+    { id:19, rating:5, image:Groc24, title:"Keto snack mix nuts and seeds",         pack:"300g Pack", price:20, original:25 },
+    { id:20, rating:5, image:Groc20, title:"Fiber boost cereal morning fresh",      pack:"500g Pack", price:15, original:18 },
   ],
   "Healthy Foods": [
-    { id:21, rating:5, image:"/src/assets/theme1/images/grocery/24.jpg", title:"Fresh mixed fruit basket organic",      pack:"1kg Pack",  price:45, original:60 },
-    { id:22, rating:4, image:"/src/assets/theme1/images/grocery/24.jpg", title:"Tropical mango lemon juice blend",      pack:"500ml",     price:28, original:34 },
-    { id:23, rating:5, image:"/src/assets/theme1/images/grocery/20.jpg", title:"Whole grain artisan bread loaf",        pack:"400g Loaf", price:8,  original:10 },
-    { id:24, rating:5, image:"/src/assets/theme1/images/grocery/19.jpg", title:"Wild salmon fillet premium quality",    pack:"300g Pack", price:55, original:63 },
-    { id:25, rating:5, image:"/src/assets/theme1/images/grocery/21.jpg", title:"Organic quinoa superfood grain pack",    pack:"500g Pack", price:18, original:22 },
-    { id:26, rating:4, image:"/src/assets/theme1/images/grocery/23.jpg", title:"Avocado spread healthy fat blend",      pack:"200g Pack", price:12, original:15 },
-    { id:27, rating:5, image:"/src/assets/theme1/images/grocery/20.jpg", title:"Greek yogurt plain probiotic rich",      pack:"500g Cup",  price:7,  original:9  },
-    { id:28, rating:5, image:"/src/assets/theme1/images/grocery/20.jpg", title:"Chia seeds omega boost superfood",       pack:"250g Pack", price:14, original:18 },
-    { id:29, rating:4, image:"/src/assets/theme1/images/grocery/21.jpg", title:"Almond butter crunchy natural spread",  pack:"300g Jar",  price:16, original:20 },
-    { id:30, rating:5, image:"/src/assets/theme1/images/grocery/19.jpg", title:"Turmeric golden milk powder blend",     pack:"200g Pack", price:22, original:28 },
+    { id:21, rating:5, image:Groc24, title:"Fresh mixed fruit basket organic",      pack:"1kg Pack",  price:45, original:60 },
+    { id:22, rating:4, image:Groc20, title:"Tropical mango lemon juice blend",      pack:"500ml",     price:28, original:34 },
+    { id:23, rating:5, image:Groc21, title:"Whole grain artisan bread loaf",        pack:"400g Loaf", price:8,  original:10 },
+    { id:24, rating:5, image:Groc19, title:"Wild salmon fillet premium quality",    pack:"300g Pack", price:55, original:63 },
+    { id:25, rating:5, image:Groc21, title:"Organic quinoa superfood grain pack",    pack:"500g Pack", price:18, original:22 },
+    { id:26, rating:4, image:Groc23, title:"Avocado spread healthy fat blend",      pack:"200g Pack", price:12, original:15 },
+    { id:27, rating:5, image:Groc20, title:"Greek yogurt plain probiotic rich",      pack:"500g Cup",  price:7,  original:9  },
+    { id:28, rating:5, image:Groc23, title:"Chia seeds omega boost superfood",       pack:"250g Pack", price:14, original:18 },
+    { id:29, rating:4, image:Groc22, title:"Almond butter crunchy natural spread",  pack:"300g Jar",  price:16, original:20 },
+    { id:30, rating:5, image:Groc19, title:"Turmeric golden milk powder blend",     pack:"200g Pack", price:22, original:28 },
   ],
   "Vitamin Items": [
-    { id:31, rating:5, image:"/src/assets/theme1/images/grocery/19.jpg", title:"Vitamin C gummies citrus flavour",       pack:"60 Gummies", price:15, original:19 },
-    { id:32, rating:5, image:"/src/assets/theme1/images/grocery/21.jpg", title:"Omega 3 fish oil capsules daily",      pack:"90 Caps",    price:30, original:40 },
-    { id:33, rating:4, image:"/src/assets/theme1/images/grocery/20.jpg", title:"Multivitamin complete daily dose",     pack:"120 Tabs",   price:25, original:28 },
-    { id:34, rating:5, image:"/src/assets/theme1/images/grocery/20.jpg", title:"Iron & zinc mineral boost complex",     pack:"60 Caps",    price:20, original:29 },
-    { id:35, rating:5, image:"/src/assets/theme1/images/grocery/23.jpg", title:"Magnesium glycinate sleep support",     pack:"90 Caps",    price:18, original:24 },
-    { id:36, rating:4, image:"/src/assets/theme1/images/grocery/21.jpg", title:"Vitamin D3 sunlight supplement",       pack:"90 Softgels",price:12, original:16 },
-    { id:37, rating:5, image:"/src/assets/theme1/images/grocery/19.jpg", title:"B-complex energy boost formula",        pack:"60 Tabs",    price:14, original:18 },
-    { id:38, rating:5, image:"/src/assets/theme1/images/grocery/20.jpg", title:"Probiotic 50 billion CFU capsules",    pack:"30 Caps",    price:22, original:30 },
-    { id:39, rating:4, image:"/src/assets/theme1/images/grocery/21.jpg", title:"Collagen peptides beauty formula",     pack:"200g Powder",price:35, original:45 },
-    { id:40, rating:5, image:"/src/assets/theme1/images/grocery/21.jpg", title:"Zinc immune defence daily tablet",     pack:"90 Tabs",    price:10, original:14 },
+    { id:31, rating:5, image:Groc20, title:"Vitamin C gummies citrus flavour",       pack:"60 Gummies", price:15, original:19 },
+    { id:32, rating:5, image:Groc21, title:"Omega 3 fish oil capsules daily",      pack:"90 Caps",    price:30, original:40 },
+    { id:33, rating:4, image:Groc20, title:"Multivitamin complete daily dose",     pack:"120 Tabs",   price:25, original:28 },
+    { id:34, rating:5, image:Groc19, title:"Iron & zinc mineral boost complex",     pack:"60 Caps",    price:20, original:29 },
+    { id:35, rating:5, image:Groc23, title:"Magnesium glycinate sleep support",     pack:"90 Caps",    price:18, original:24 },
+    { id:36, rating:4, image:Groc21, title:"Vitamin D3 sunlight supplement",       pack:"90 Softgels",price:12, original:16 },
+    { id:37, rating:5, image:Groc19, title:"B-complex energy boost formula",        pack:"60 Tabs",    price:14, original:18 },
+    { id:38, rating:5, image:Groc20, title:"Probiotic 50 billion CFU capsules",    pack:"30 Caps",    price:22, original:30 },
+    { id:39, rating:4, image:Groc21, title:"Collagen peptides beauty formula",     pack:"200g Powder",price:35, original:45 },
+    { id:40, rating:5, image:Groc24, title:"Zinc immune defence daily tablet",     pack:"90 Tabs",    price:10, original:14 },
   ],
 };
 

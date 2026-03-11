@@ -1,4 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import HeadPh3 from "@/assets/theme3/images/hero/hphone3.png";
+import HeadPh2 from "@/assets/theme3/images/hero/hphone2.png";
+import HeadPh1 from "@/assets/theme3/images/hero/hphone1.png";
 
 /* ══════════════════════════════════════
    STYLES
@@ -117,7 +120,7 @@ const SLIDES = [
     cta: "Start Buying",
     bg: "linear-gradient(135deg, #f8f8f6 0%, #eeecea 60%, #e2dfda 100%)",
     accent: "#FFD000",
-    image: "/src/assets/theme3/images/hero/hphone1.png",
+    image: HeadPh1,
     imageAlt: "Smartwatch",
     badge: null,
     imgStyle: { maxHeight: "420px", filter: "drop-shadow(0 30px 60px rgba(0,0,0,0.18))" },
@@ -133,7 +136,7 @@ const SLIDES = [
     cta: "Shop Now",
     bg: "linear-gradient(135deg, #f0f4f8 0%, #dce8f0 55%, #c8dde8 100%)",
     accent: "#FFD000",
-    image: "/src/assets/theme3/images/hero/hphone2.png",
+    image: HeadPh2,
     imageAlt: "Headphones",
     badge: "NEW",
     imgStyle: { maxHeight: "380px", filter: "drop-shadow(0 30px 60px rgba(0,0,0,0.15))" },
@@ -149,7 +152,7 @@ const SLIDES = [
     cta: "Explore Range",
     bg: "linear-gradient(135deg, #fafaf7 0%, #f0ede6 55%, #e4dfd5 100%)",
     accent: "#FFD000",
-    image: "/src/assets/theme3/images/hero/hphone3.png",
+    image: HeadPh3,
     imageAlt: "Camera",
     badge: "SALE",
     imgStyle: { maxHeight: "360px", filter: "drop-shadow(0 30px 60px rgba(0,0,0,0.20))" },

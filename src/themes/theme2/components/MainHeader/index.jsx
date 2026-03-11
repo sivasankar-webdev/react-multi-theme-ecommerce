@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import useThemeLink from "../../../../shared/hooks/ThemeLink";
-import { useNavigate } from "react-router-dom";
+import LogoTheme02 from "@/assets/theme2/images/logo/theme2-logo.png";
 
 /* ═══════════════════════════════════════════════════
    CONSTANTS
@@ -344,7 +344,7 @@ function MobileDrawer({ open, onClose }) {
             {/* <div className="w-9 h-9 rounded-full flex items-center justify-center text-white font-black text-sm"
               style={{ background: TEAL }}>🛒</div>
             <span className="text-[18px] font-black" style={{ color: TEAL }}>Marketpro</span> */}
-            <img src="/src/assets/theme2/images/logo/theme2-logo.png" alt="marketpro" />
+            <img src={LogoTheme02} alt="marketpro" />
           </div>
           <button onClick={onClose}
             className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:text-red-500 transition-colors">

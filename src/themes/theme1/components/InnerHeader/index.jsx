@@ -1,6 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import useThemeLink from "../../../../shared/hooks/ThemeLink";
+import NavImg from "@/assets/theme1/images/feature/05.jpg";
+import LogoImg02 from "@/assets/theme1/images/logo/logo-02.svg";
+import LogoImg01 from "@/assets/theme1/images/logo/logo-01.svg";
 
 
 
@@ -49,7 +52,7 @@ const navConfig = [
         { title: "Product Feature", links: ["Variable Product","Affiliate Product","Shop Compare"] },
         { title: "Shop Others",     links: ["Cart","Checkout","Track Order"] },
       ],
-      promo: { headline: "Everyday Fresh & Clean with Our Products", cta: "Read Details", image: "/src/assets/theme1/images/feature/05.jpg" }
+      promo: { headline: "Everyday Fresh & Clean with Our Products", cta: "Read Details", image: NavImg }
   }},
     { label: "Vendors", href: "#", simple: [
       { label: "Vendor List",    href: "/vendor-list"},
@@ -787,7 +790,7 @@ export default function InnerPageHeader({ activePage = "Home" }) {
           <div className=" mx-auto w-full flex items-center gap-4">
             {/* Logo */}
             <a href="#" className="flex items-center gap-2 min-w-fit">
-              <img src="/src/assets/theme1/images/logo/logo-01.svg" alt="EkoMart" className="h-10"/>
+              <img src={LogoImg01} alt="EkoMart" className="h-10"/>
             </a>
 
             {/* Categories + Search */}
@@ -844,7 +847,7 @@ export default function InnerPageHeader({ activePage = "Home" }) {
 
         {/* ── TABLET ── */}
         <div className="hidden md:flex lg:hidden items-center justify-between px-4 py-3 bg-white border-b border-gray-100 shadow-sm">
-          <a href="#"><img src="/src/assets/theme1/images/logo/logo-02.svg" alt="EkoMart" className="h-9"/></a>
+          <a href="#"><img src="@/assets/theme1/images/logo/logo-02.svg" alt="EkoMart" className="h-9"/></a>
           <div className="flex items-center gap-2">
             <a href="#" className="flex items-center gap-1.5 text-gray-700 border border-gray-200 rounded-lg px-3 py-2 text-sm font-medium hover:text-[#629d23] transition-colors">
               <UserIcon/><span>Account</span>
@@ -873,7 +876,7 @@ export default function InnerPageHeader({ activePage = "Home" }) {
 
         {/* ── MOBILE ── */}
         <div className="flex md:hidden items-center justify-between px-4 py-3 bg-white border-b border-gray-100 shadow-sm">
-          <a href="#"><img src="/src/assets/theme1/images/logo/logo-02.svg" alt="EkoMart" className="h-8"/></a>
+          <a href="#"><img src="@/assets/theme1/images/logo/logo-02.svg" alt="EkoMart" className="h-8"/></a>
           <div className="flex items-center gap-2">
             <div className="relative" onClick={sp}>
               <button onClick={() => setCartOpen(p => !p)}
@@ -913,7 +916,7 @@ export default function InnerPageHeader({ activePage = "Home" }) {
           {/* Mini logo on sticky */}
           {scrolled && (
             <a href="#" className="mr-4 flex-shrink-0">
-              <img src="/src/assets/theme1/images/logo/logo-02.svg" alt="EkoMart" className="h-8"/>
+              <img src={LogoImg02} alt="EkoMart" className="h-8"/>
             </a>
           )}
 

@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import Payments from "@/assets/theme3/images/payment/04.png";
 
 /* ══════════════════════════════════════
    STYLES
@@ -498,7 +499,7 @@ function BottomBar() {
               }}
             >
               {/* {pm.text} */}
-              <img src="/src/assets/theme3/images/payment/04.png" alt="payments" />
+              <img src={Payments} alt="payments" />
             </div>
           ))}
         </div>

@@ -1,4 +1,7 @@
 import { useState } from "react";
+import Cat05 from "@/assets/theme1/images/category/05.jpg";
+import Cat07 from "@/assets/theme1/images/category/07.jpg";
+import Cat06 from "@/assets/theme1/images/category/06.jpg";
 
 /* ── Plus / Arrow icon for Shop Now ── */
 const PlusCircle = () => (
@@ -22,7 +25,7 @@ const banners = [
     titleGreen: "Good Taste",
     href: "#",
     bg: "#f0f4f0",
-    image: "/src/assets/theme1/images/category/05.jpg",
+    image: Cat05,
   },
   {
     id: 2,
@@ -31,7 +34,7 @@ const banners = [
     titleGreen: "Banana Chips",
     href: "#",
     bg: "#fdf8f0",
-    image: "/src/assets/theme1/images/category/07.jpg",
+    image: Cat07,
   },
   {
     id: 3,
@@ -40,7 +43,7 @@ const banners = [
     titleGreen: "Chocolate Snacks",
     href: "#",
     bg: "#f5f5f0",
-    image: "/src/assets/theme1/images/category/06.jpg",
+    image: Cat06,
   },
 ];
 

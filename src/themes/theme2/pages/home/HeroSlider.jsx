@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import HeroImg from "@/assets/theme2/images/hero/04.png";
 
 const TEAL   = "#1a6b7a";
 const TEAL2  = "#195f6d";
@@ -17,7 +18,7 @@ const defaultSlides = [
     price:    "$60.99",
     bg:       "#e8f7f9",
     pattern:  "#c5edf2",
-    image:    "/src/assets/theme2/images/hero/04.png",
+    image:    HeroImg,
     offerBadge: true,
   },
   {
@@ -29,7 +30,7 @@ const defaultSlides = [
     price:    "$29.99",
     bg:       "#edf7f0",
     pattern:  "#c5e8cc",
-    image:    "/src/assets/theme2/images/hero/04.png",
+    image:    HeroImg,
     offerBadge: false,
   },
   {
@@ -41,7 +42,7 @@ const defaultSlides = [
     price:    "$45.99",
     bg:       "#fef7ed",
     pattern:  "#fde5c0",
-    image:    "/src/assets/theme2/images/hero/04.png",
+    image:    HeroImg,
     offerBadge: true,
   },
   {
@@ -53,7 +54,7 @@ const defaultSlides = [
     price:    "$29.99",
     bg:       "#edf7f0",
     pattern:  "#c5e8cc",
-    image:    "/src/assets/theme2/images/hero/04.png",
+    image:    HeroImg,
     offerBadge: true,
   },
 ];

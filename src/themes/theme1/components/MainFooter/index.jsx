@@ -1,4 +1,6 @@
 import { useState } from "react";
+import PaymentsImg from "@/assets/theme1/images/payment/04.png";
+import LogoImg02 from "@/assets/theme1/images/logo/logo-02.svg";
 
 /* ══════════════════════════════════════════
    SOCIAL ICONS
@@ -164,7 +166,7 @@ export default function EkoMartFooter() {
                 <span className="font-extrabold">EKO</span>
                 <span className="font-light">MART</span>
               </span> */}
-              <img src="/src/assets/theme1/images/logo/logo-02.svg" alt="logo" />
+              <img src={LogoImg02} alt="logo" />
             </div>
 
             {/* Tagline */}
@@ -279,7 +281,7 @@ export default function EkoMartFooter() {
               {paymentMethods.map(pm => (
                 
                  // Replace this <span> with your real payment logo image:
-                  <img key={pm.label} src={`/src/assets/theme1/images/payment/${pm.label.toLowerCase()}.png`}
+                  <img key={pm.label} src={PaymentsImg}
                     alt={pm.label} className="h-6 object-contain rounded" />
                 
                 // <span key={pm.label}

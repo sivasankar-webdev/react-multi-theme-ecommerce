@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import VendorLogo from "@/assets/theme1/images/logo/vendor-logo.png";
 
 const GREEN      = "#629d23";
 const GREEN_PALE = "#f0fae8";
@@ -66,12 +67,12 @@ function Stars({ rating }) {
    VENDOR DATA
 ═══════════════════════════════════════════════════ */
 const VENDORS = [
-  { id:1, name:"Fresh Juice Bar",     status:"Closed", rating:4.50, address:"530 Post Ct El Dorado Hills California, United States", phone:"+1 (511) 934-8170", logo:"/src/assets/theme1/images/logo/vendor-logo.png",   joined:"2021-03-12" },
-  { id:2, name:"Food Character",      status:"Open",   rating:4.50, address:"530 Post Ct El Dorado Hills California, United States", phone:"+1 (511) 934-8170", logo:"/src/assets/theme1/images/logo/vendor-logo.png",   joined:"2022-07-01" },
-  { id:3, name:"Food Forulard",       status:"Open",   rating:4.50, address:"530 Post Ct El Dorado Hills California, United States", phone:"+1 (511) 934-8170", logo:"/src/assets/theme1/images/logo/vendor-logo.png",   joined:"2023-01-18" },
-  { id:4, name:"Authentic Grocery",   status:"Closed", rating:4.50, address:"530 Post Ct El Dorado Hills California, United States", phone:"+1 (511) 934-8170", logo:"/src/assets/theme1/images/logo/vendor-logo.png",  joined:"2020-11-05" },
-  { id:5, name:"Green Basket",        status:"Open",   rating:4.20, address:"530 Post Ct El Dorado Hills California, United States", phone:"+1 (511) 934-8170", logo:"/src/assets/theme1/images/logo/vendor-logo.png",  joined:"2022-09-22" },
-  { id:6, name:"Organic Pantry",      status:"Open",   rating:4.80, address:"530 Post Ct El Dorado Hills California, United States", phone:"+1 (511) 934-8170", logo:"/src/assets/theme1/images/logo/vendor-logo.png",    joined:"2021-06-14" },
+  { id:1, name:"Fresh Juice Bar",     status:"Closed", rating:4.50, address:"530 Post Ct El Dorado Hills California, United States", phone:"+1 (511) 934-8170", logo:VendorLogo,   joined:"2021-03-12" },
+  { id:2, name:"Food Character",      status:"Open",   rating:4.50, address:"530 Post Ct El Dorado Hills California, United States", phone:"+1 (511) 934-8170", logo:VendorLogo,   joined:"2022-07-01" },
+  { id:3, name:"Food Forulard",       status:"Open",   rating:4.50, address:"530 Post Ct El Dorado Hills California, United States", phone:"+1 (511) 934-8170", logo:VendorLogo,   joined:"2023-01-18" },
+  { id:4, name:"Authentic Grocery",   status:"Closed", rating:4.50, address:"530 Post Ct El Dorado Hills California, United States", phone:"+1 (511) 934-8170", logo:VendorLogo,  joined:"2020-11-05" },
+  { id:5, name:"Green Basket",        status:"Open",   rating:4.20, address:"530 Post Ct El Dorado Hills California, United States", phone:"+1 (511) 934-8170", logo:VendorLogo,  joined:"2022-09-22" },
+  { id:6, name:"Organic Pantry",      status:"Open",   rating:4.80, address:"530 Post Ct El Dorado Hills California, United States", phone:"+1 (511) 934-8170", logo:VendorLogo,    joined:"2021-06-14" },
 ];
 
 const SORT_OPTIONS = [

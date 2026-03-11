@@ -1,4 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import Veges1 from "@/assets/theme2/images/carousel/veges1.png";
+import Veges2 from "@/assets/theme2/images/carousel/veges2.png";
+import Veges3 from "@/assets/theme2/images/carousel/veges3.png";
+import Veges4 from "@/assets/theme2/images/carousel/veges4.png";
 
 const TEAL  = "#1a6b7a";
 const TEAL2 = "#195f6d";
@@ -26,14 +30,14 @@ const ChevronIcon = ({ dir }) => (
    PRODUCT DATA
 ═══════════════════════════════════════════════════ */
 const defaultProducts = [
-  { id:1,  name:"Taylor Farms Broccoli Florets Vegetables", price:14.99, original:28.99, rating:4.8, reviews:17,  sold:18, total:35, image:"/src/assets/theme2/images/carousel/veges1.png" },
-  { id:2,  name:"Taylor Farms Broccoli Florets Vegetables", price:14.99, original:28.99, rating:4.8, reviews:17,  sold:18, total:35, image:"/src/assets/theme2/images/carousel/veges2.png" },
-  { id:3,  name:"Taylor Farms Broccoli Florets Vegetables", price:14.99, original:28.99, rating:4.8, reviews:17,  sold:18, total:35, image:"/src/assets/theme2/images/carousel/veges3.png" },
-  { id:4,  name:"Taylor Farms Broccoli Florets Vegetables", price:14.99, original:28.99, rating:4.8, reviews:17,  sold:18, total:35, image:"/src/assets/theme2/images/carousel/veges2.png" },
-  { id:5,  name:"Taylor Farms Broccoli Florets Vegetables", price:14.99, original:28.99, rating:4.8, reviews:17,  sold:18, total:35, image:"/src/assets/theme2/images/carousel/veges1.png" },
-  { id:6,  name:"Organic Valley Whole Milk Half Gallon",    price:12.49, original:22.99, rating:4.6, reviews:24,  sold:22, total:40, image:"/src/assets/theme2/images/carousel/veges6.png" },
-  { id:7,  name:"Fresh Express Salad Kit Caesar",           price:8.99,  original:15.99, rating:4.5, reviews:31,  sold:29, total:50, image:"/src/assets/theme2/images/carousel/veges1.png" },
-  { id:8,  name:"Kind Breakfast Granola Bars Variety Pack", price:9.99,  original:18.99, rating:4.7, reviews:45,  sold:41, total:60, image:"/src/assets/theme2/images/carousel/veges2.png" },
+  { id:1,  name:"Taylor Farms Broccoli Florets Vegetables", price:14.99, original:28.99, rating:4.8, reviews:17,  sold:18, total:35, image:Veges1 },
+  { id:2,  name:"Taylor Farms Broccoli Florets Vegetables", price:14.99, original:28.99, rating:4.8, reviews:17,  sold:18, total:35, image:Veges2 },
+  { id:3,  name:"Taylor Farms Broccoli Florets Vegetables", price:14.99, original:28.99, rating:4.8, reviews:17,  sold:18, total:35, image:Veges3 },
+  { id:4,  name:"Taylor Farms Broccoli Florets Vegetables", price:14.99, original:28.99, rating:4.8, reviews:17,  sold:18, total:35, image:Veges2 },
+  { id:5,  name:"Taylor Farms Broccoli Florets Vegetables", price:14.99, original:28.99, rating:4.8, reviews:17,  sold:18, total:35, image:Veges1 },
+  { id:6,  name:"Organic Valley Whole Milk Half Gallon",    price:12.49, original:22.99, rating:4.6, reviews:24,  sold:22, total:40, image:Veges4 },
+  { id:7,  name:"Fresh Express Salad Kit Caesar",           price:8.99,  original:15.99, rating:4.5, reviews:31,  sold:29, total:50, image:Veges1 },
+  { id:8,  name:"Kind Breakfast Granola Bars Variety Pack", price:9.99,  original:18.99, rating:4.7, reviews:45,  sold:41, total:60, image:Veges2 },
 ];
 
 /* ═══════════════════════════════════════════════════

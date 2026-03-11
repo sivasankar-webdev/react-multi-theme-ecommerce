@@ -1,6 +1,11 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import useThemeLink from "../../../../shared/hooks/ThemeLink";
+import NavImg from "@/assets/theme1/images/feature/05.jpg";
+import LogoImg02 from "@/assets/theme1/images/logo/logo-02.svg";
+import LogoImg01 from "@/assets/theme1/images/logo/logo-01.svg";
+import BannerImg03 from "@/assets/theme1/images/banner/03.webp";
+import BannerImg09 from "@/assets/theme1/images/banner/09.webp";
 
 /* ═══════════════════════════════════════════════════
    ICONS
@@ -44,7 +49,7 @@ const navConfig = [
         { title: "Product Feature", links: ["Variable Product","Affiliate Product","Shop Compare"] },
         { title: "Shop Others",     links: ["Cart","Checkout","Track Order"] },
       ],
-      promo: { headline: "Everyday Fresh & Clean with Our Products", cta: "Read Details", image: "/src/assets/theme1/images/feature/05.jpg" }
+      promo: { headline: "Everyday Fresh & Clean with Our Products", cta: "Read Details", image: NavImg }
   }},
   { label: "Vendors", href: "#", simple: [
     { label: "Vendor List",    href: "/vendor-list"},
@@ -87,8 +92,8 @@ const features = [
 ];
 
 const slides = [
-  { image: "/src/assets/theme1/images/banner/03.webp",  tag: "Get up to 30% off on your first $150 purchase", title: "Don't miss our amazing\ngrocery deals", body: "We have prepared special discounts for you on grocery products. Don't miss these opportunities...", cta: "Shop Now" },
-  { image: "/src/assets/theme1/images/banner/09.webp",  tag: "Fresh every morning — direct from farms",        title: "Organic fruits &\nvegetables daily",    body: "Hand-picked and delivered fresh to your door every single day. Taste the difference.", cta: "Shop Now" },
+  { image: BannerImg03,  tag: "Get up to 30% off on your first $150 purchase", title: "Don't miss our amazing\ngrocery deals", body: "We have prepared special discounts for you on grocery products. Don't miss these opportunities...", cta: "Shop Now" },
+  { image: BannerImg09,  tag: "Fresh every morning — direct from farms",        title: "Organic fruits &\nvegetables daily",    body: "Hand-picked and delivered fresh to your door every single day. Taste the difference.", cta: "Shop Now" },
   { image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&q=80", tag: "Exclusive weekend offer", title: "Premium pantry\nessentials await", body: "Stock your pantry with quality products at unbeatable prices. Limited time weekend deals.", cta: "Shop Now" },
 ];
 
@@ -655,7 +660,7 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-4 px-4 py-[28px]" style={{background:GREEN}}>
           {/* Logo image */}
           <div className="flex items-center gap-2 min-w-fit">
-            <img src="/src/assets/theme1/images/logo/logo-02.svg" alt="EkoMart" className="h-10"/>
+            <img src={LogoImg02} alt="EkoMart" className="h-10"/>
           </div>
 
           {/* Search bar */}
@@ -708,7 +713,7 @@ export default function Header() {
             TABLET BAR (md – lg)
         ══════════════════════════════════ */}
         <div className="hidden md:flex lg:hidden items-center justify-between px-4 py-3" style={{background:GREEN}}>
-          <img src="/src/assets/theme1/images/logo/logo-02.svg" alt="EkoMart" className="h-9"/>
+          <img src={LogoImg02} alt="EkoMart" className="h-9"/>
           <div className="flex items-center gap-2">
             <button className="flex items-center gap-1.5 bg-white hover:bg-gray-50 text-gray-800 border border-white/30 rounded px-3 py-2 text-sm font-medium transition-colors">
               <UserIcon/><span>Account</span>
@@ -739,7 +744,7 @@ export default function Header() {
             MOBILE BAR (< md)
         ══════════════════════════════════ */}
         <div className="flex md:hidden items-center justify-between px-4 py-3" style={{background:GREEN}}>
-          <img src="/src/assets/theme1/images/logo/logo-02.svg" alt="EkoMart" className="h-9"/>
+          <img src={LogoImg02} alt="EkoMart" className="h-9"/>
           <div className="flex items-center gap-2">
             <div className="relative" onClick={stopProp}>
               <button onClick={()=>setCartOpen(p=>!p)}
@@ -775,11 +780,11 @@ export default function Header() {
         style={{background:GREEN}}
       >
         <div className="px-4 flex items-center justify-between max-w-screen-2xl mx-auto">
-          {/* {scrolled && (
+          {scrolled && (
             <div className="flex items-center mr-4 py-1">
-              <img src="/src/assets/theme1/images/logo/logo-02.svg" alt="EkoMart" className="h-8"/>
+              <img src={LogoImg02} alt="EkoMart" className="h-8"/>
             </div>
-          )} */}
+          )}
           <nav className="flex py-2 items-center">
             {navConfig.map(item=>(
               <NavItem key={item.label} item={item} active={item.label==="Home"}/>

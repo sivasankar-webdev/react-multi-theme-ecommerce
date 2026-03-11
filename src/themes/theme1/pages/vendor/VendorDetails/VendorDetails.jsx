@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import useThemeLink from "../../../../../shared/hooks/ThemeLink";
+import Groc01 from "@/assets/theme1/images/category/01.png";
 
 const GREEN      = "#629d23";
 const GREEN_DARK = "#4e7e1a";
@@ -73,7 +74,7 @@ const ChevronDown = () => (
 ═══════════════════════════════════════════════════ */
 const VENDOR = {
   name:     "Fresh Juice Bar",
-  logo:     "/src/assets/theme1/images/category/01.png",
+  logo:     Groc01,
   rating:   4.50,
   address:  "530 Post Ct El Dorado Hills California, United States",
   phone:    "+1(511) 934-8170",

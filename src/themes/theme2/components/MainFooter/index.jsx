@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+import LogoTheme02 from "@/assets/theme2/images/logo/theme2-logo.png";
+import Payments from "@/assets/theme2/images/payment/04.png";
 
 const TEAL      = "#1a6b7a";
 const TEAL_PALE = "#f0fafb";
@@ -237,7 +239,7 @@ export default function Theme2Footer({
               {/* <div className="w-10 h-10 rounded-full flex items-center justify-center text-white text-lg flex-shrink-0"
                 style={{ background: TEAL }}>🛒</div>
               <span className="text-[22px] font-black" style={{ color: TEAL }}>{companyName}</span> */}
-              <img src="/src/assets/theme2/images/logo/theme2-logo.png" />
+              <img src={LogoTheme02} />
             </div>
 
             <p className="text-gray-500 text-[14px] leading-relaxed mb-5">{description}</p>
@@ -333,7 +335,7 @@ export default function Theme2Footer({
                 {/* {["PayPal","Maestro","Mastercard","Visa","AmazonPay"].map(p => (
                   <PayBadge key={p} name={p}/>
                 ))} */}
-                <img src="/src/assets/theme2/images/payment/04.png" alt="payments" />
+                <img src={Payments} alt="payments" />
               </div>
             </div>
           </div>

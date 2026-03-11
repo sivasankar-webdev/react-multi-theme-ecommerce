@@ -1,4 +1,11 @@
 import { useState } from "react";
+import Groc01 from "@/assets/theme1/images/grocery/01.jpg";
+import Groc19 from "@/assets/theme1/images/grocery/19.jpg";
+import Groc20 from "@/assets/theme1/images/grocery/20.jpg";
+import Groc21 from "@/assets/theme1/images/grocery/21.jpg";
+import Groc22 from "@/assets/theme1/images/grocery/22.jpg";
+import Groc23 from "@/assets/theme1/images/grocery/23.jpg";
+import Groc24 from "@/assets/theme1/images/grocery/24.jpg";
 
 /* ══════════════════════════════════════════
    ICONS
@@ -46,28 +53,28 @@ const ChevronDown = () => (
 ══════════════════════════════════════════ */
 const allProducts = {
   "Frozen Foods": [
-    { id:1,  discount:25, image:"/src/assets/theme1/images/grocery/01.jpg", title:"Dalivaring business makes your profit", pack:"500g Pack", price:63, original:36 },
-    { id:2,  discount:25, image:"/src/assets/theme1/images/grocery/19.jpg", title:"Firebase business makes your profit",   pack:"500g Pack", price:50, original:36 },
-    { id:3,  discount:25, image:"/src/assets/theme1/images/grocery/21.jpg", title:"Netlyfy business makes your profit",    pack:"500g Pack", price:19, original:36 },
-    { id:4,  discount:25, image:"/src/assets/theme1/images/grocery/20.jpg", title:"Details business makes your profit",    pack:"500g Pack", price:90, original:36 },
+    { id:1,  discount:25, image:Groc01, title:"Dalivaring business makes your profit", pack:"500g Pack", price:63, original:36 },
+    { id:2,  discount:25, image:Groc19, title:"Firebase business makes your profit",   pack:"500g Pack", price:50, original:36 },
+    { id:3,  discount:25, image:Groc21, title:"Netlyfy business makes your profit",    pack:"500g Pack", price:19, original:36 },
+    { id:4,  discount:25, image:Groc20, title:"Details business makes your profit",    pack:"500g Pack", price:90, original:36 },
   ],
   "Diet Foods": [
-    { id:5,  discount:15, image:"/src/assets/theme1/images/grocery/22.jpg", title:"Green salad diet pack fresh daily",   pack:"250g Pack", price:22, original:30 },
-    { id:6,  discount:20, image:"/src/assets/theme1/images/grocery/23.jpg", title:"Berry detox smoothie mix organic",    pack:"300g Pack", price:35, original:44 },
-    { id:7,  discount:10, image:"/src/assets/theme1/images/grocery/24.jpg", title:"Oatmeal power breakfast blend",       pack:"500g Pack", price:18, original:20 },
-    { id:8,  discount:30, image:"/src/assets/theme1/images/grocery/22.jpg", title:"Natural juice diet drink low sugar",  pack:"1L Bottle", price:12, original:17 },
+    { id:5,  discount:15, image:Groc22, title:"Green salad diet pack fresh daily",   pack:"250g Pack", price:22, original:30 },
+    { id:6,  discount:20, image:Groc23, title:"Berry detox smoothie mix organic",    pack:"300g Pack", price:35, original:44 },
+    { id:7,  discount:10, image:Groc24, title:"Oatmeal power breakfast blend",       pack:"500g Pack", price:18, original:20 },
+    { id:8,  discount:30, image:Groc22, title:"Natural juice diet drink low sugar",  pack:"1L Bottle", price:12, original:17 },
   ],
   "Healthy Foods": [
-    { id:9,  discount:25, image:"/src/assets/theme1/images/grocery/01.jpg", title:"Fresh mixed fruit basket organic",    pack:"1kg Pack",  price:45, original:60 },
-    { id:10, discount:18, image:"/src/assets/theme1/images/grocery/19.jpg", title:"Tropical mango lemon juice blend",    pack:"500ml",     price:28, original:34 },
-    { id:11, discount:22, image:"/src/assets/theme1/images/grocery/21.jpg", title:"Whole grain artisan bread loaf",      pack:"400g Loaf", price:8,  original:10 },
-    { id:12, discount:12, image:"/src/assets/theme1/images/grocery/20.jpg", title:"Wild salmon fillet premium quality",  pack:"300g Pack", price:55, original:63 },
+    { id:9,  discount:25, image:Groc01, title:"Fresh mixed fruit basket organic",    pack:"1kg Pack",  price:45, original:60 },
+    { id:10, discount:18, image:Groc19, title:"Tropical mango lemon juice blend",    pack:"500ml",     price:28, original:34 },
+    { id:11, discount:22, image:Groc21, title:"Whole grain artisan bread loaf",      pack:"400g Loaf", price:8,  original:10 },
+    { id:12, discount:12, image:Groc20, title:"Wild salmon fillet premium quality",  pack:"300g Pack", price:55, original:63 },
   ],
   "Vitamin Items": [
-    { id:13, discount:20, image:"/src/assets/theme1/images/grocery/22.jpg", title:"Vitamin C gummies citrus flavour",     pack:"60 Gummies", price:15, original:19 },
-    { id:14, discount:25, image:"/src/assets/theme1/images/grocery/23.jpg", title:"Omega 3 fish oil capsules daily",    pack:"90 Caps",    price:30, original:40 },
-    { id:15, discount:10, image:"/src/assets/theme1/images/grocery/24.jpg", title:"Multivitamin complete daily dose",   pack:"120 Tabs",   price:25, original:28 },
-    { id:16, discount:30, image:"/src/assets/theme1/images/grocery/22.jpg", title:"Iron & zinc mineral boost complex",   pack:"60 Caps",    price:20, original:29 },
+    { id:13, discount:20, image:Groc22, title:"Vitamin C gummies citrus flavour",     pack:"60 Gummies", price:15, original:19 },
+    { id:14, discount:25, image:Groc23, title:"Omega 3 fish oil capsules daily",    pack:"90 Caps",    price:30, original:40 },
+    { id:15, discount:10, image:Groc24, title:"Multivitamin complete daily dose",   pack:"120 Tabs",   price:25, original:28 },
+    { id:16, discount:30, image:Groc22, title:"Iron & zinc mineral boost complex",   pack:"60 Caps",    price:20, original:29 },
   ],
 };
 

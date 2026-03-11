@@ -1,4 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import Veges1 from "@/assets/theme2/images/carousel/veges1.png";
+import Veges2 from "@/assets/theme2/images/carousel/veges2.png";
+import Veges3 from "@/assets/theme2/images/carousel/veges3.png";
+import Veges4 from "@/assets/theme2/images/carousel/veges4.png";
 
 const TEAL      = "#1a6b7a";
 const TEAL_PALE = "#e8f7f9";
@@ -8,16 +12,16 @@ const GREEN_PALE = "#f0fae8";
    CATEGORY DATA
 ═══════════════════════════════════════════════════ */
 const defaultCategories = [
-  { id:1,  label:"Desserts",      count:"125+ Products", image:"/src/assets/theme2/images/carousel/veges1.png", bg:"#fef3e8" },
-  { id:2,  label:"Drinks & Juice",count:"125+ Products", image:"/src/assets/theme2/images/carousel/veges2.png", bg:"#fff8e1" },
-  { id:3,  label:"Animals Food",  count:"125+ Products", image:"/src/assets/theme2/images/carousel/veges3.png", bg:"#f0fae8" },
-  { id:4,  label:"Fresh Fruits",  count:"125+ Products", image:"/src/assets/theme2/images/carousel/veges4.png", bg:"#f0fae8" },
-  { id:5,  label:"Yummy Candy",   count:"125+ Products", image:"/src/assets/theme2/images/carousel/veges1.png", bg:"#fce8f3" },
-  { id:6,  label:"Fish & Meats",  count:"125+ Products", image:"/src/assets/theme2/images/carousel/veges4.png", bg:"#f9e8e8" },
-  { id:7,  label:"Vegetables",    count:"125+ Products", image:"/src/assets/theme2/images/carousel/veges1.png", bg:"#e8f5e9" },
-  { id:8,  label:"Bakery",        count:"125+ Products", image:"/src/assets/theme2/images/carousel/veges2.png", bg:"#fff3e0" },
-  { id:9,  label:"Dairy & Eggs",  count:"125+ Products", image:"/src/assets/theme2/images/carousel/veges3.png", bg:"#fffde7" },
-  { id:10, label:"Snacks",        count:"125+ Products", image:"/src/assets/theme2/images/carousel/veges4.png", bg:"#fce4ec" },
+  { id:1,  label:"Desserts",      count:"125+ Products", image:Veges1, bg:"#fef3e8" },
+  { id:2,  label:"Drinks & Juice",count:"125+ Products", image:Veges2, bg:"#fff8e1" },
+  { id:3,  label:"Animals Food",  count:"125+ Products", image:Veges3, bg:"#f0fae8" },
+  { id:4,  label:"Fresh Fruits",  count:"125+ Products", image:Veges4, bg:"#f0fae8" },
+  { id:5,  label:"Yummy Candy",   count:"125+ Products", image:Veges1, bg:"#fce8f3" },
+  { id:6,  label:"Fish & Meats",  count:"125+ Products", image:Veges4, bg:"#f9e8e8" },
+  { id:7,  label:"Vegetables",    count:"125+ Products", image:Veges1, bg:"#e8f5e9" },
+  { id:8,  label:"Bakery",        count:"125+ Products", image:Veges2, bg:"#fff3e0" },
+  { id:9,  label:"Dairy & Eggs",  count:"125+ Products", image:Veges3, bg:"#fffde7" },
+  { id:10, label:"Snacks",        count:"125+ Products", image:Veges4, bg:"#fce4ec" },
 ];
 
 /* ═══════════════════════════════════════════════════
